@@ -27,7 +27,7 @@
   width: 348px;
   height: 568px;
   background: #f5f7ff;
-  border-radius: 24px;
+  border-radius: 20px;
   box-shadow: 2px 4px 12px 4px rgba(114, 128, 167, 0.2);
   overflow: hidden;
   transform: translate(-50%, -50%); }
@@ -132,10 +132,12 @@
   .modal {
     width: 440px;
     height: 700px; }
+    .modal_header {
+      height: 32%; }
     .modal_content {
       padding: 0 48px; }
     .modal_title {
-      margin: 32px 0 16px;
+      margin: 40px 0 16px;
       font-size: 1.7rem; }
     .modal_plan {
       margin: 24px 0 36px;
@@ -144,6 +146,6 @@
       height: 52px;
       line-height: 52px; }
     .modal_cancel {
-      margin-top: 28px; } }
+      margin-top: 20px; } }
 
 /*# sourceMappingURL=main.css.map */

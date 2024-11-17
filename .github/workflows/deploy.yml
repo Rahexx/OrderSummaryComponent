@@ -11,11 +11,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-
       - name: Checkout repository
         uses: actions/checkout@v3
 
@@ -24,11 +19,8 @@ jobs:
           sudo apt-get install -y ruby-full
           sudo gem install sass
 
-      - name: Create CSS folder
-        run: mkdir -p css
-
       - name: Compile SCSS to CSS
-        run: sass main.scss css/main.css
+        run: sass main.scss main.css
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
 $primary-1: hsl(225, 100%, 94%);
-$primary-1-bg: hsl(225, 100%, 94%, 0.4);
+$primary-1-bg: hsla(225, 100%, 94%, 0.4);
 $primary-2: hsl(245, 75%, 52%);
 $hover: hsl(245, 81%, 71%);
-$primary-2-shadow: hsl(245, 75%, 52%, 0.3);
+$primary-2-shadow: hsla(245, 75%, 52%, 0.3);
 $light-blue: hsl(225, 100%, 98%);
 $desaturated-blue: hsl(224, 23%, 55%);
 $dark-blue: hsl(223, 47%, 23%);
-$desaturated-blue-shadow: hsl(224, 23%, 55%, 0.2);
+$desaturated-blue-shadow: hsla(224, 23%, 55%, 0.2);
 $font: 'Red Hat Display', sans-serif;
 $btn-height-mobile: 48px;
 $btn-height-desktop: 52px;

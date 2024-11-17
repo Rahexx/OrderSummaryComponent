@@ -3,6 +3,7 @@
 $primary-1: hsl(225, 100%, 94%);
 $primary-1-bg: hsl(225, 100%, 94%, 0.4);
 $primary-2: hsl(245, 75%, 52%);
+$hover: hsl(245, 81%, 71%);
 $primary-2-shadow: hsl(245, 75%, 52%, 0.3);
 $light-blue: hsl(225, 100%, 98%);
 $desaturated-blue: hsl(224, 23%, 55%);
@@ -149,5 +150,35 @@ $font-weight-extra-bold: 900;
     font-size: 1rem;
     color: $desaturated-blue;
     background: transparent;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal {
+    &_plan_change {
+      cursor: pointer;
+      transition: 0.5s ease-in;
+
+      &:hover {
+        color: $hover;
+      }
+    }
+    &_payment {
+      cursor: pointer;
+      transition: 0.5s ease-in;
+
+      &:hover {
+        background-color: $hover;
+      }
+    }
+
+    &_cancel {
+      cursor: pointer;
+      transition: 0.5s ease-in;
+
+      &:hover {
+        color: $dark-blue;
+      }
+    }
   }
 }

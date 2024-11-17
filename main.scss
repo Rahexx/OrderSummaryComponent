@@ -11,6 +11,7 @@ $dark-blue: hsl(223, 47%, 23%);
 $desaturated-blue-shadow: hsl(224, 23%, 55%, 0.2);
 $font: 'Red Hat Display', sans-serif;
 $btn-height-mobile: 48px;
+$btn-height-desktop: 52px;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
 $font-weight-extra-bold: 900;
@@ -165,7 +166,7 @@ $font-weight-extra-bold: 900;
     }
     &_payment {
       cursor: pointer;
-      transition: 0.5s ease-in;
+      transition: 0.3s ease-in;
 
       &:hover {
         background-color: $hover;
@@ -174,11 +175,48 @@ $font-weight-extra-bold: 900;
 
     &_cancel {
       cursor: pointer;
-      transition: 0.5s ease-in;
+      transition: 0.3s ease-in;
 
       &:hover {
         color: $dark-blue;
       }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .container::before {
+    height: 437px;
+    background-image: url('../images/pattern-background-desktop.svg');
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    width: 440px;
+    height: 700px;
+
+    &_content {
+      padding: 0 48px;
+    }
+
+    &_title {
+      margin: 32px 0 16px;
+      font-size: 1.7rem;
+    }
+
+    &_plan {
+      margin: 24px 0 36px;
+      padding: 24px 20px;
+    }
+
+    &_payment {
+      height: $btn-height-desktop;
+      line-height: $btn-height-desktop;
+    }
+
+    &_cancel {
+      margin-top: 28px;
     }
   }
 }
